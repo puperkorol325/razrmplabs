@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Введите имя"
+        android:layout_gravity="center"
+         />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="Ваше имя"
+        />
+
+    <Button
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Ввести"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        app:icon="@drawable/ic_launcher_foreground"
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Красивая кнопка"
+        android:backgroundTint="@color/black"
+        app:iconTint="#48f542"
+        app:cornerRadius="3dp"
+        />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
